@@ -1,0 +1,410 @@
+.index-title {
+  font-size: 100px;
+}
+
+.promise{   
+  background-image: url(../assets/images/home-header.png);
+  color: var(--color-4);
+  @include pad{
+    background-image: url(../assets/images/home-header-sm.png);
+  }
+  @include mobile-larger{
+    .promise_txt-r{
+      padding-right: 36px;
+    }
+  }
+
+  &-box{
+    height: 787px;
+  }
+  &_txt-r{
+    text-align: right;
+    & h2{
+      font-size: 64px;
+      font-weight: 700;
+      @include mobile-larger{
+        font-size: 24px;
+      }
+    }
+    & h3{
+      font-size: 36px;
+      @include mobile-larger{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.main{
+  background: #FBF2F2;
+  color: var(--color-4);
+
+  @include mobile-larger{
+    & .row{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    & .tx_48{
+      font-size: 24px;
+    }
+  }
+
+  
+
+  & h2{
+    font-size: 48px;
+    font-weight:700;
+    padding-top: 80px;
+    padding-bottom: 36px;
+    // color: #650300; 
+  }
+
+  & span{
+    font-size: 83px;
+    text-align: center;
+    padding-bottom: 24px;
+    @include pad{
+
+    }
+  }
+  & h3{
+    font-size: 24px;
+    font-weight:700;
+    padding-bottom: 8px;
+  }
+
+  & p{
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding-bottom: 80px;
+
+  & li{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad{
+      width: 50%;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    @include mobile-larger{
+      width: 100%;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+
+.optical{
+  background: #FFF;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include mobile-larger{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  & .d-flex{
+    @include pad{
+
+      flex-wrap: wrap;
+    }
+  }
+
+  & .box{
+    // width: calc( (100% - 48px )/3);
+    padding-left: 12px;
+    padding-right: 12px;
+    
+    @include pad{
+      padding-bottom: 24px;
+      padding-left: 216px;
+      padding-right: 216px;
+    }
+    @include mobile-larger{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  & .box:first-child{
+    // padding-left: 0px;
+  }
+  & .box:last-child{
+    // padding-right: 0px;
+    @include pad{
+      padding-bottom: 0px;
+    }
+  }
+  
+  & h2{
+    font-size: 48px;
+    color: $secondary;
+    @include mobile-larger{
+      font-size: 24px;
+    }
+  }
+
+  & img{
+    padding-bottom: 8px;
+   
+  }
+
+  & p{
+    color: $rimary;
+    font-size: 48px;
+  }
+
+}
+.classic-row {
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: 48px;
+  @include mobile-larger{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.col-4{
+  width: 33.3333333333%;
+}
+@media (max-width: 992px) {
+  .col-md-12 {
+      width: 100%;
+  }
+}
+
+
+.double{
+  background-image: url(../assets/images/index-bg.png);
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include pad{
+    background-image: url(../assets/images/index-bg-sm.png);
+    & .box-1{
+      padding-bottom: 24px;
+    }
+  }
+  @include mobile-larger{
+    background-image: url(../assets/images/index-bg-sm.png);
+
+
+    .f-wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  & .box-w{
+    width: 50%;
+    @include pad
+    {
+      width: 100%;
+    }
+  }
+
+  & h2{
+    padding-bottom: 48px;
+  }
+
+  & .bk{
+    max-width: 100%;
+    background-size: cover;
+    height: 240px;
+
+    
+  }
+  & .bk-img1{
+    background-image: url(../assets/images/home-section4-1.png);
+    @include mobile-larger{
+      background-image: url(../assets/images/home-section4-1-sm.png);
+    }
+  }
+  & .bk-img2{
+    background-image: url(../assets/images/home-section4-2.png);
+    @include mobile-larger{
+      background-image: url(../assets/images/home-section4-2-sm.png);
+    }
+  }
+
+  & .box{
+    background: #FFF;
+    border-right: 0.5px solid #e7e7e7;
+  }
+  & p{
+    display: block;
+    // width: 647px;
+    padding: 8px 0px;    
+    color: $rimary;
+  }
+}
+
+.customer{
+  
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-weight: 700;
+
+  & .title{
+    font-size: 48px;
+    padding-bottom: 48px;
+    color: $secondary;
+    text-align: center;
+  }
+
+  & .box{
+    // height: 511px;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad{
+      margin-bottom: 52px;
+    }
+    @include mobile-larger{
+      margin-bottom: 24px;
+    }
+  }
+  & .box-txt{
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    // margin-left: 16px;
+    // margin-right: 16px;
+    // margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px #00000029;
+    // height: 100%;
+  }
+  & .box-txt:hover{
+    box-shadow: 2px 4px 6px #d19a2cb8;
+  }
+  & img{
+    // height: 306px;
+    width: 100%;
+  }
+
+  & h2{
+    font-size: 16px;
+    padding-top: 16px;
+  }
+  & h3{
+    font-size: 16px;
+    padding-top: 8px;
+  }
+  & p{
+    font-size: 14px;
+    margin-top: auto;
+    color: #707070;    
+  }
+}
+
+.contact_us{
+  background: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  & .box{
+    max-width: 636px;
+    margin: 0 auto;
+    @include pad{
+      padding-left: 96px;
+      padding-right: 96px;
+    }
+    @include mobile-larger{
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+
+  & h2{
+    font-size: 48px;
+    text-align: center;
+    color: $secondary;
+    padding-bottom: 48px;
+  }
+
+  & .input{    
+    padding-bottom: 16px;
+  }
+  & .input input{
+    height: 36px;
+    width: 100%;
+  }
+
+  & textarea{
+    width: 100%;
+  }
+
+  & h3{
+    padding-bottom: 8px;
+  }
+
+  & p{
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
+
+  & label{
+    display: block;
+    padding-bottom: 48px;
+  }
+
+  & .in-box{
+    max-width: 416px;
+    margin: 0 auto;    
+  }
+
+  & .contact-btn{
+    background: $rimary;
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+}
+
+.card-row {
+  margin-left: -12px;
+  margin-right: -12px;
+  flex-wrap: wrap;
+  @include mobile-larger{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.col-3 {
+  width: 25%;
+}
+
+@include pad{
+  .col-md-6{
+    width: 50%;
+  }
+}
+
+@include mobile-larger{
+  .col-md-6{
+    width: 100%;
+  }
+}

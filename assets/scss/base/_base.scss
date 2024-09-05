@@ -1,0 +1,97 @@
+/* public */
+.container{
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    @include pad{
+        max-width: 720px;
+    }
+    @include mobile-larger{
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.tx_cen{
+    text-align: center;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+.tx_16{
+    font-size: 16px;
+}
+.tx_20{
+    font-size: 20px;
+}
+.tx_24{
+    font-size: 24px;
+}
+.tx_36{
+    font-size: 36px;
+}
+.tx_48{
+    font-size: 48px;
+}
+.tx_64{
+    font-size: 64px;
+}
+
+@media (max-width: 767px) {
+    .mb-fs-16{
+        font-size: 16px;
+    }
+}
+
+
+
+.d-flex{
+    display: flex;
+}
+
+// 主軸
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: end;
+}
+
+// 交錯軸
+.align-items-center{
+    align-items: center;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+/* 換行 */
+.f-column{
+    flex-direction: column;
+}
+
+
+hr{
+    margin-top: 31px;
+    margin-bottom: 31px;
+    @include mobile-larger{
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+
+}
+
+.bk{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn{
+    color: #fff;
+padding: 6px 12px;
+background-color: var(--color-3);
+}
